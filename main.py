@@ -32,8 +32,6 @@ app_params = {
     "age": age
 }
 
-
-
 exercise_endpoint = f"{host_domain}/v2/natural/exercise"
 
 response = requests.post(exercise_endpoint, json=app_params, headers=headers)
@@ -66,7 +64,4 @@ headers = {
 
 sheety_response = requests.post(sheety_endpoint, json=sheety_params, headers=headers)
 sheety_response.raise_for_status()
-
-
-
 
