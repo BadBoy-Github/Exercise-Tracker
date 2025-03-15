@@ -45,7 +45,7 @@ exercise_data =  data["exercises"][0]
 date = datetime.datetime.now().strftime("%d/%m/%Y")
 time = datetime.datetime.now().strftime("%I:%M:%S %p")
 exercise_name = exercise_data["user_input"].capitalize()
-duration = f"{exercise_data["duration_min"]}"
+duration = f"{exercise_data["duration_min"]} min"
 calories = f"{exercise_data["nf_calories"]}"
 
 sheety_endpoint = f"https://api.sheety.co/{username}/myWorkouts/workouts"
